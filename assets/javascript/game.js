@@ -1,5 +1,5 @@
 var wins = 0;
-var losses = 0; 
+var losses = 0;
 var attempts = 9;
 var guesses = [];
 
@@ -11,27 +11,33 @@ document.onkeyup = function () {
 
     // gathers the users keyCode and makes it a string and also makes it lowercase
 
-    var userGuess = String.fromCharCode(event.keyCode).toLowerCase();   
+    var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
     // tells the computer to select the computerChoice array pick something at random
 
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    
+
     // checking to see if the users guess is the same as the computers choice
 
-    if (userGuess === computerGuess){
+    if (userGuess === computerGuess) {
         console.log("match");
         wins++;
-    } else if(attempts<1){
+    } else if (attempts < 1) {
         losses++;
         attempts = 9;
         guesses = [];
-    }else {
+    } else {
         console.log("NOPE");
         guesses.push(userGuess);
         attempts--;
     }
+
+    // now take the variables and replace the text content
+    winText.textContent = "Wins: " + wins;
+    lossText.textContent = "Losses: " + losses;
+    attemptText.textContent = "Attempts left: " + attempts;
+    guessLeftText.textContent = "Guesses So Far: " + guesses;
 
 }
 
@@ -41,11 +47,4 @@ var winText = document.getElementById("wins-text");
 var lossText = document.getElementById("losses-text");
 var attemptText = document.getElementById("attemptsLeft-text");
 var guessLeftText = document.getElementById("guessesSoFar")
-
-// now take the variables and replace the text content
-
-winText.textContent = "Wins: " + wins;
-lossText.textContent = "Losses: " + losses; 
-attemptText.textContent = "Attempts left: " + attempts;
-guessLeftText.textContent = "Guesses So Far: " + guesses;
 
