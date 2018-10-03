@@ -21,14 +21,14 @@ document.onkeyup = function () {
     // checking to see if the users guess is the same as the computers choice
 
     if (userGuess === computerGuess) {
-        console.log("match");
         wins++;
+        attempts = 9;
+        guesses = [];
     } else if (attempts < 2) {
         losses++;
         attempts = 9;
         guesses = [];
     } else {
-        console.log("NOPE");
         guesses.push(userGuess);
         attempts--;
     }

@@ -10,10 +10,26 @@ body {
     font-family: 'Ghoulish';
     src: url(../images/Ghoulish\ copy.ttf);
 }
+@font-face {
+font-family: 'BlackFestival';
+src: url(../images/The\ Black\ Festival\ -\ DEMO\ copy.ttf);
+}
+
+h1 {
+    font-family: 'Ghoulish';
+    color: #d750ff;
+    font-size: 47px;
+}
 
 .top {
-    color: white;
+        color: white;
     text-align: center;
+}
+
+p {
+    font-family: 'BlackFestival';
+    font-size: 24px;    
+
 }
 
 .height {
