@@ -23,7 +23,7 @@ document.onkeyup = function () {
     if (userGuess === computerGuess) {
         console.log("match");
         wins++;
-    } else if (attempts < 1) {
+    } else if (attempts < 2) {
         losses++;
         attempts = 9;
         guesses = [];
@@ -38,6 +38,8 @@ document.onkeyup = function () {
     lossText.textContent = "Losses: " + losses;
     attemptText.textContent = "Attempts left: " + attempts;
     guessLeftText.textContent = "Guesses So Far: " + guesses;
+
+    document.getElementById("Directions").textContent = "";
 
 }
 

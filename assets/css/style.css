@@ -1,0 +1,43 @@
+body { 
+    background: url(../images/229614-675x450-clairvoyant-with-crystal-ball.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Ghoulish';
+    src: url(../images/Ghoulish\ copy.ttf);
+}
+
+.top {
+    color: white;
+    text-align: center;
+}
+
+.height {
+    height: 550px;
+}
+
+.move {
+    text-align: center;
+}
+
+h5 {
+    margin-top: 5%; 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
