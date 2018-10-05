@@ -41,6 +41,7 @@ document.onkeyup = function () {
 
     document.getElementById("Directions").textContent = "";
 
+    
 }
 
 // this is linking the new variables with the ID's in the HTML 
